@@ -1,0 +1,11 @@
+.name {
+    font-size: 8.5em;
+    color: white;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-name: slidein;
+    letter-spacing: -6px;
+    transform: skew(-2deg);
+    text-transform: uppercase;
+    position:absolute;
+}

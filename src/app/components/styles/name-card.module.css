@@ -1,4 +1,4 @@
-.name{
+.container {
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -11,12 +11,12 @@
     align-items: center;
 }
 
-.name h1 {
+.container h1 {
     font-size: 8.5em;
     color: white;
-    animation-duration: 1.5s;
+    /* animation-duration: 1.5s;
     animation-timing-function: ease-out;
-    animation-name: slidein;
+    animation-name: slidein; */
     letter-spacing: -6px;
     transform: skew(-2deg);
 }
