@@ -5,7 +5,6 @@
     animation-timing-function: ease-out;
     animation-name: slidein;
     letter-spacing: 6px;
-    transform: skew(-2deg);
     text-transform: uppercase;
-    position:absolute;
+    position: absolute;
 }

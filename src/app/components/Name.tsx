@@ -16,11 +16,12 @@ export const Name: React.FC<NameProps> = ({ order, style }) => {
             opacity: 1,
             y: '-200%',
             x: '150%',
-        },
+        }, 
         animate: {
             opacity: 1,
-            y: `${-5*order}px`, 
-            x: `${5*order}px`,
+            y: `${-3.5*order}px`, 
+            x: `${3.5*order}px`,
+            skewY: '7deg',
             transition: {
                 delay: 0.05*order,
                 duration: 1.5,

@@ -30,7 +30,7 @@
   text-align: center;
   margin: 0;
   color: var(--color-primary);
-  animation: shadows 2s ;
+  /* animation: shadows 2s ; */
   letter-spacing: 0.4rem;
 }
 
