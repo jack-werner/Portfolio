@@ -1,0 +1,32 @@
+.name{
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name h1 {
+    font-size: 8.5em;
+    color: white;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-name: slidein;
+    letter-spacing: -6px;
+    transform: skew(-2deg);
+}
+
+@keyframes slidein { 
+    from {
+        transform: translate(150%, -200%);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
