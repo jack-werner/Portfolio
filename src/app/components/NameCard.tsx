@@ -9,6 +9,7 @@ import { Mina } from "next/font/google";
 export interface NameStyle {
     color: string,
     zIndex: number,
+    fontSize: string,
 }
 
 export const NameCard = () => {
@@ -43,11 +44,30 @@ export const NameCard = () => {
     ]
 
     // dynamically adjust the height and font size of the nav bar
-    let divHeight = Math.max(10, 100-height);
+    const maxHeight = 100;
+    const minHeight = 10;
+
+    const minFont = 2;
+    const maxFont = 8.5;
+
+    let divHeight = Math.max(minHeight, maxHeight-height);
+    let divScale = (divHeight - minHeight)/(maxHeight-minHeight);
+
+    let fontSize = minFont + (maxFont-minFont)*divScale;
+    
+    console.log({divScale});
+    console.log({divHeight});
+    console.log({fontSize});
+
 
     const style = {
-        height: `${divHeight}vh`
+        height: `${divHeight}vh`,
     }
+
+    // function fontScaler(x: number, max: number, min: number) {
+    //     return Math.max(8.5*(100-x)/100, 2)
+    //     // return (x-min)/(max)
+    // }
 
     return (
         <div className={styles.container} style={style}>
@@ -56,6 +76,7 @@ export const NameCard = () => {
                 const style: NameStyle = {
                     color: color,
                     zIndex: colors.length -1*index,
+                    fontSize: `${fontSize}em`,
                 }
                 return (<Name key={index} order={index} style={style}/>)
             })}
