@@ -8,9 +8,10 @@ import { NameStyle } from "./NameCard";
 interface NameProps {
     order: number;
     style: NameStyle;
+    scale: number;
 }
 
-export const Name: React.FC<NameProps> = ({ order, style }) => {
+export const Name: React.FC<NameProps> = ({ order, style, scale }) => {
     const flyInVariants = {
         initial: {
             opacity: 1,
@@ -19,9 +20,9 @@ export const Name: React.FC<NameProps> = ({ order, style }) => {
         }, 
         animate: {
             opacity: 1,
-            y: `${-3.5*order}px`, 
-            x: `${3.5*order}px`,
-            skewY: '7deg',
+            y: `${-3.5*order*scale}px`, 
+            x: `${3.5*order*scale}px`,
+            skewY: '5deg',
             transition: {
                 delay: 0.05*order,
                 duration: 1.5,

@@ -44,7 +44,7 @@ export const NameCard = () => {
     ]
 
     // dynamically adjust the height and font size of the nav bar
-    const maxHeight = 100;
+    const maxHeight = 110;
     const minHeight = 10;
 
     const minFont = 2;
@@ -64,11 +64,6 @@ export const NameCard = () => {
         height: `${divHeight}vh`,
     }
 
-    // function fontScaler(x: number, max: number, min: number) {
-    //     return Math.max(8.5*(100-x)/100, 2)
-    //     // return (x-min)/(max)
-    // }
-
     return (
         <div className={styles.container} style={style}>
             {colors.map((color, index) => {
@@ -78,7 +73,7 @@ export const NameCard = () => {
                     zIndex: colors.length -1*index,
                     fontSize: `${fontSize}em`,
                 }
-                return (<Name key={index} order={index} style={style}/>)
+                return (<Name key={index} order={index} style={style} scale={divScale}/>)
             })}
         </div>
     )
