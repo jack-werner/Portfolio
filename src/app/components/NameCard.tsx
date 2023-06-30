@@ -54,15 +54,19 @@ export const NameCard = () => {
     let divScale = (divHeight - minHeight)/(maxHeight-minHeight);
 
     let fontSize = minFont + (maxFont-minFont)*divScale;
-    
-    console.log({divScale});
-    console.log({divHeight});
-    console.log({fontSize});
 
+    const position = (divHeight === minHeight) ? 'fixed': 'relative';
 
     const style = {
         height: `${divHeight}vh`,
+        position: position,
     }
+
+    // console.log({divScale});
+    console.log({divHeight});
+    console.log({position});
+    console.log('\n')
+    // console.log({fontSize});
 
     return (
         <div className={styles.container} style={style}>
