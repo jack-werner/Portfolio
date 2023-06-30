@@ -12,8 +12,19 @@ export const AboutPage = () => {
                 alt="Jack Werner Portfolio Picture"
             />
             <TextCard title="About Me"> 
-            Hello! I'm Jack Werner, a Data/Full stack software engineer based in New York City. I have professional experience in Data Science and Data Engineering, and personal experience with Web Development, I built this site you’re looking at right now! I am passionate about using software to enhance the joy discovering, learning about, and enjoying music. You can read about my different projects that I have undertaken in my blog.
-            In my personal life I also enjoy DJing and producing music. I also enjoy photography, Generative AI artwork, Surfing and snowboarding
+            <p>
+                Hello! I'm Jack Werner, a Data/Full stack software engineer based in New York City. 
+                I have professional experience in <strong> Data Science</strong> and 
+                <strong> Data Engineering</strong>, and personal experience with 
+                <strong> Web Development</strong>, I built this site you're looking at right now! 
+                I am passionate about using software to enhance the joy discovering, learning 
+                about, and enjoying music. You can read about my different projects that I have 
+                undertaken in my blog.
+            </p>
+            <p>
+                In my personal life I also enjoy DJing and producing music. I also enjoy 
+                photography, Generative AI artwork, Surfing and snowboarding.
+            </p>
             </TextCard>
         </div>
     )
