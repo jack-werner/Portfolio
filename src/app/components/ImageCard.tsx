@@ -7,22 +7,24 @@ export const ImageCard = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const { top, bottom } = imageRef.current.getBoundingClientRect();        
-            const isVisible = top < window.innerHeight && bottom >= 0;
-            console.log({
-                top,
-                bottom,
-                isVisible,
-            })
-            setIsVisible(isVisible);
-        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+            });
+        });
 
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // for checking visibility on initial render? seems bad to call twice?
+        if (imageRef.current) {
+            observer.observe(imageRef.current);
+        }
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            if (imageRef.current) {
+                observer.unobserve(imageRef.current);
+            }
         }
 
     }, []);
