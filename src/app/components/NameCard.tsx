@@ -44,7 +44,7 @@ export const NameCard = () => {
     ]
 
     // dynamically adjust the height and font size of the nav bar
-    const maxHeight = 110;
+    const maxHeight = 120;
     const minHeight = 10;
 
     const minFont = 2;

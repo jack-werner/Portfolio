@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { NameCard } from './components/NameCard'
 import React, {useEffect} from 'react';
+import { AboutPage } from './components/AboutPage';
 
 export default function Home() {
   console.log("SDAF");
@@ -14,42 +15,7 @@ export default function Home() {
 
   return (<>
       <NameCard/>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
-      <h1>ASG</h1>
+      <AboutPage/>
     </>
   )
 }

@@ -25,7 +25,7 @@ export const Name: React.FC<NameProps> = ({ order, style, scale }) => {
             skewY: '5deg',
             transition: {
                 delay: 0.05*order,
-                duration: 1.5,
+                duration: 1.25,
                 ease: 'easeOut'
             }
         }
