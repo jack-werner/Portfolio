@@ -6,7 +6,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    /* margin-top: 100vh; */
+    /* position: fixed; */
+    margin-top: 50vh;
 }
 
 .image {

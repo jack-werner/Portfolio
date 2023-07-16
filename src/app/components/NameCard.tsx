@@ -4,7 +4,6 @@ import React, {useEffect, useState} from "react";
 import styles from "./styles/name-card.module.css";
 import { motion } from "framer-motion";
 import { Name } from "./Name";
-import { Mina } from "next/font/google";
 
 export interface NameStyle {
     color: string,
@@ -55,23 +54,14 @@ export const NameCard = () => {
 
     let fontSize = minFont + (maxFont-minFont)*divScale;
 
-    const position = (divHeight === minHeight) ? 'fixed': 'relative';
-
     const style = {
         height: `${divHeight}vh`,
-        position: position,
     }
-
-    // console.log({divScale});
-    console.log({divHeight});
-    console.log({position});
-    console.log('\n')
-    // console.log({fontSize});
 
     return (
         <div className={styles.container} style={style}>
             {colors.map((color, index) => {
-                // console.log(color);
+                
                 const style: NameStyle = {
                     color: color,
                     zIndex: colors.length -1*index,
