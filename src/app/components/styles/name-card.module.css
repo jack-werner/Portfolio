@@ -11,17 +11,6 @@
     align-items: center;
     z-index: 900;
     position: fixed;
-    /* position: relative; */
     top: 0; 
     transition: height 0.1s;
-    /* opacity: 0.5; */
-    /* margin-top: 5px; */
 }
-
-/* .container.nav-bar {
-    height: 100px;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    background-color: black;
-} */
