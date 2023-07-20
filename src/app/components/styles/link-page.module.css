@@ -1,0 +1,11 @@
+.background {
+    background-color: black;
+    display: grid;
+    padding: 10%;
+    height: 100vh;
+}
+
+.link {
+    background-color: white;
+    padding: 2em;
+}
