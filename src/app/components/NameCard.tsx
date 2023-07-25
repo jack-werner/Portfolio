@@ -70,7 +70,7 @@ export const NameCard = () => {
         <div className={styles.container} style={style}>
             {colors.map((color, index) => {
                 
-                const style = {
+                const style: NameStyle = {
                     color: color,
                     zIndex: colors.length -1*index,
                     fontSize: `${fontSize}em`,
