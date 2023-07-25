@@ -1,11 +1,10 @@
 .button {
     background-color: #000;
-    /* height: max(15vw, 2em); */
-    height: 5em;
-    /* flex-basis: 40% ; */
-    /* min-width: 8em; */
+    height: 2.5em;
     width: 40%;
-    margin: 3vw;
+    margin-top: 0.5em;
+
+    flex-shrink: 0;
 
     color: #fff;
     text-align: center;
