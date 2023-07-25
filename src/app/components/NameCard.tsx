@@ -52,8 +52,6 @@ export const NameCard = () => {
 
     let fontSize = minFont + (maxFont-minFont)*divScale;
 
-    
-
     let bgColor = "#000"
     let fontColor = "#fff"
 
