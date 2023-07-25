@@ -2,7 +2,6 @@
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-weight: 500;
     font-style: normal;
-    background-color: black;
     width: 100vw;
     max-height: 100vh;
     margin: 0;
@@ -12,5 +11,5 @@
     z-index: 900;
     position: fixed;
     top: 0; 
-    transition: height 0.1s;
+    transition: background-color 2s ease;
 }

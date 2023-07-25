@@ -1,0 +1,65 @@
+.background {
+    background-color: #000;
+    height: 95vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.link {
+    background-color: white;
+    height: max(15vw, 2em);
+    flex-basis: 40% ;
+    min-width: 8em;
+    margin: 3vw;
+
+    color: #000;
+    text-align: center;
+    font-family: Superior Title;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 2.5rem;
+    background: #FFF;
+    box-shadow: 5px 4px 21px 5px #505050;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+
+.link:hover {
+    cursor: grab;
+}
+
+.link a {
+    color: black;
+    text-decoration: none;
+    cursor: grab;
+}
+
+.link a:hover {
+    cursor: grab;
+}
+
+.underline {
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #000;
+}
