@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { ImageCard } from "./ImageCard";
+import { ResumeDownload } from "./ResumeDownload";
 import styles from "./styles/about-page.module.css";
 import { TextCard } from "./TextCard";
 

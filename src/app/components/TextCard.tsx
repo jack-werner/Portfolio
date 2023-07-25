@@ -1,6 +1,7 @@
 import React, {ReactNode, useState, useEffect, useRef} from "react";
 import styles from './styles/text-card.module.css';
 import { motion } from 'framer-motion';
+import { ResumeDownload } from "./ResumeDownload";
 
 interface TextCardProps {
     title: string;
@@ -50,7 +51,7 @@ export const TextCard: React.FC<TextCardProps> = ({title, children}) => {
         }
     }
 
-    return (
+    return (<>
         <motion.div className={styles.card}
             initial="hidden"
             animate={isVisible ? 'visible': 'hidden'}
@@ -63,6 +64,9 @@ export const TextCard: React.FC<TextCardProps> = ({title, children}) => {
             <div className={styles.body}>
                 {children}
             </div>
+            <ResumeDownload/>
         </motion.div>
+    </>
+       
     )  
 }

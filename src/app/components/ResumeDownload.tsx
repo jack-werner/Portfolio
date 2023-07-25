@@ -1,24 +1,21 @@
-import { motion } from "framer-motion";
+import {motion} from 'framer-motion';
 
-import styles from "./styles/link-page.module.css";
+import styles from './styles/resume-download.module.css'
 
-interface LinkCardProps {
-    text: string;
-    link: string;
-}
 
-export const LinkCard: React.FC<LinkCardProps> = ({text, link}) => {
+
+export const ResumeDownload = () => {
     const containerVariants = {
         normal: {
             scale: 1,
-            boxShadow: "5px 5px 10px rgba(255, 255, 255, 0.6)",
+            boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.6)",
         },
         hover: {
             scale: 1.1,
-            boxShadow: "10px 10px 10px rgba(255, 255, 255, 0.3)",
+            boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.3)",
         },
     };
-
+    
     const textVariants = {
         normal: {
             width: 0,
@@ -35,13 +32,13 @@ export const LinkCard: React.FC<LinkCardProps> = ({text, link}) => {
 
     return (
         <motion.div 
-            className={styles.link}
+            className={styles.button}
             variants={containerVariants}
             initial="normal"
             whileHover="hover"
             transition={transition}
         >
-            <a href={link}>{text}</a>
+            <a href="./public/next.svg" download>Resumé</a>
             <motion.span
                 className={styles.underline}
                 variants={textVariants}
