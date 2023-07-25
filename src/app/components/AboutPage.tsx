@@ -38,9 +38,9 @@ export const AboutPage = () => {
             <TextCard title="About Me"> 
                 <p>
                 Hi! I'm Jack Werner, I'm a Software Engineer and DJ in Manhattan, NYC. 
-                I have experience in Data Engineering, Data Science, Data Analysis, and 
-                Web Development. I specifically enjoy working with Python, AWS, SQL, 
-                and Next.js. I build technology that enables the creation, discovery, 
+                I have experience in <strong>Data Engineering, Data Science, Data Analysis, and 
+                Web Development</strong>. I specifically enjoy working with <strong>Python, AWS, SQL, 
+                and Next.js</strong>. I build technology that enables the creation, discovery, 
                 and appreciation of music. Music is my greatest passion and using software 
                 to help people enjoy it as much as I do brings me great joy. 
                 You follow the links below to see some projects I have undertaken in this 
@@ -48,7 +48,7 @@ export const AboutPage = () => {
                 experience.
                 </p>
                 <p>
-                    In my personal life I also enjoy DJing and producing music, photography, Generative AI artwork, Surfing and snowboarding. 
+                    In my personal life I also enjoy DJing and producing music, photography, generative AI artwork, surfing and snowboarding. 
                     Keep scrolling to take a look at some of the other work I have done.
                 </p>
             </TextCard>
