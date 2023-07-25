@@ -2,7 +2,6 @@
 
 import React, {useEffect, useState} from "react";
 import styles from "./styles/name-card.module.css";
-import { motion } from "framer-motion";
 import { Name } from "./Name";
 
 export interface NameStyle {
@@ -15,7 +14,6 @@ export const NameCard = () => {
     const [height, setHeight] = useState(0);
 
     useEffect(() => {
-        console.log("mounting");
         const handleScroll = () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             console.log({scrollTop}); 
@@ -31,7 +29,7 @@ export const NameCard = () => {
     console.log({height});
 
 
-    const colors: string[] = [
+    let colors: string[] = [
         "#FFFFFF",
         "#F7CB08",
         "#ED6E1F",
@@ -54,8 +52,21 @@ export const NameCard = () => {
 
     let fontSize = minFont + (maxFont-minFont)*divScale;
 
+    
+
+    let bgColor = "#000"
+    let fontColor = "#fff"
+
+
+    if (height > 1000){
+        bgColor = "#fff";
+        colors[0] = "#000";
+    }
+
     const style = {
         height: `${divHeight}vh`,
+        color: fontColor,
+        "background-color": bgColor,
     }
 
     return (
