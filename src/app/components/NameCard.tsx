@@ -57,8 +57,7 @@ export const NameCard = () => {
     let bgColor = "#000"
     let fontColor = "#fff"
 
-
-    if (height > 1000){
+     if (height > 1000){
         bgColor = "#fff";
         colors[0] = "#000";
     }
