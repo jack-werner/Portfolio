@@ -28,8 +28,8 @@ export const AboutPage = () => {
     let divHeight = Math.max(minHeight, maxHeight-height);
 
     const style = {
-        'margin-top': `${divHeight+10}vh`, // +10 to give some padding after the header
-    }
+        marginTop: `${divHeight+10}vh`, // +10 to give some padding after the header
+    };
 
     return(
         <div className={styles.background} style={style}>
