@@ -38,7 +38,7 @@ export const ResumeDownload = () => {
             whileHover="hover"
             transition={transition}
         >
-            <a href="./public/next.svg" download>Resumé</a>
+            <a href="/dinner-menu-july-2023.pdf" download="test.pdf">Resumé</a>
             <motion.span
                 className={styles.underline}
                 variants={textVariants}
