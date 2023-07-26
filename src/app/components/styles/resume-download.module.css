@@ -8,9 +8,9 @@
 
     color: #fff;
     text-align: center;
-    font-family: Superior Title;
+    font-family: "le-monde-livre-std", serif;
     font-size: 2rem;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 800;
     line-height: normal;
     border-radius: 2.5rem;
