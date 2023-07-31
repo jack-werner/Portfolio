@@ -43,7 +43,6 @@
 .body {
     display: flex;
     width: 38.4375rem;
-    /* height: 36.625rem; */
     height: 60%;
     flex-direction: column;
     flex-shrink: 0;
