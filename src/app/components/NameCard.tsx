@@ -26,9 +26,6 @@ export const NameCard = () => {
         }
     }, []);
 
-    console.log({height});
-
-
     let colors: string[] = [
         "#FFFFFF",
         "#F7CB08",
@@ -44,13 +41,8 @@ export const NameCard = () => {
     const maxHeight = 120;
     const minHeight = 10;
 
-    const minFont = 2;
-    const maxFont = 8.5;
-
     let divHeight = Math.max(minHeight, maxHeight-height);
     let divScale = (divHeight - minHeight)/(maxHeight-minHeight);
-
-    let fontSize = minFont + (maxFont-minFont)*divScale;
 
     let bgColor = "#000"
     let fontColor = "#fff"
@@ -73,7 +65,7 @@ export const NameCard = () => {
                 const style = {
                     color: color,
                     zIndex: colors.length -1*index,
-                    fontSize: `${fontSize}em`,
+                    fontSize: `clamp(2.5em, 10vw, ${divHeight*1.5}px)`,
                 }
                 return (<Name key={index} order={index} style={style} scale={divScale}/>)
             })}

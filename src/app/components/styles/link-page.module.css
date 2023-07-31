@@ -1,6 +1,7 @@
 .background {
     background-color: #000;
-    height: 95vh;
+    height: 100vh;
+    width: 100vw;
     
     display: flex;
     justify-content: center;
@@ -8,7 +9,7 @@
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     
     display: flex;
     flex-direction: row;
@@ -40,21 +41,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* cursor: pointer; */
 }
 
 .link:hover {
-    cursor: grab;
+    cursor: pointer;
 }
 
 .link a {
     color: black;
     text-decoration: none;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .link a:hover {
-    cursor: grab;
+    cursor: pointer;
 }
 
 .underline {

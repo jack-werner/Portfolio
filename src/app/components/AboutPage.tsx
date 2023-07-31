@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { ImageCard } from "./ImageCard";
+import { ResumeDownload } from "./ResumeDownload";
 import styles from "./styles/about-page.module.css";
 import { TextCard } from "./TextCard";
 
@@ -36,17 +37,19 @@ export const AboutPage = () => {
             <ImageCard></ImageCard>
             <TextCard title="About Me"> 
                 <p>
-                    Hello! I'm Jack Werner, a Data/Full stack software engineer based in New York City. 
-                    I have professional experience in <strong> Data Science</strong> and 
-                    <strong> Data Engineering</strong>, and personal experience with 
-                    <strong> Web Development</strong>, I built this site you're looking at right now! 
-                    I am passionate about using software to enhance the joy discovering, learning 
-                    about, and enjoying music. You can read about my different projects that I have 
-                    undertaken in my blog.
+                Hi! I'm Jack Werner, I'm a Software Engineer and DJ in Manhattan, NYC. 
+                I have experience in <strong>Data Engineering, Data Science, Data Analysis, and 
+                Web Development</strong>. I specifically enjoy working with <strong>Python, AWS, SQL, 
+                and Next.js</strong>. I build technology that enables the creation, discovery, 
+                and appreciation of music. Music is my greatest passion and using software 
+                to help people enjoy it as much as I do brings me great joy. 
+                You follow the links below to see some projects I have undertaken in this 
+                area and click on the link below to see my Resume and view my past professional 
+                experience.
                 </p>
                 <p>
-                    In my personal life I also enjoy DJing and producing music. I also enjoy 
-                    photography, Generative AI artwork, Surfing and snowboarding.
+                    In my personal life I also enjoy DJing and producing music, photography, generative AI artwork, surfing and snowboarding. 
+                    Keep scrolling to take a look at some of the other work I have done.
                 </p>
             </TextCard>
         </div>
