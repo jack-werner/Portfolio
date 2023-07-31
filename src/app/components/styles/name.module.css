@@ -1,5 +1,4 @@
 .name {
-    font-size: 8.5em;
     color: white;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
@@ -7,4 +6,5 @@
     letter-spacing: 6px;
     text-transform: uppercase;
     position: absolute;
+    text-align: center;
 }

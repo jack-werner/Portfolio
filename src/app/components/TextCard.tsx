@@ -40,6 +40,7 @@ export const TextCard: React.FC<TextCardProps> = ({title, children}) => {
             x: '100%',
             opacity: 0.5,
             filter: 'blur(20px)',
+            // display: 'None'
         }, 
         visible: {
             x: 0,

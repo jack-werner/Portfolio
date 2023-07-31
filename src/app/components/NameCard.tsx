@@ -44,13 +44,21 @@ export const NameCard = () => {
     const maxHeight = 120;
     const minHeight = 10;
 
-    const minFont = 2;
-    const maxFont = 8.5;
+    const minFont = 4;
+    const maxFont = 8;
 
     let divHeight = Math.max(minHeight, maxHeight-height);
     let divScale = (divHeight - minHeight)/(maxHeight-minHeight);
 
-    let fontSize = minFont + (maxFont-minFont)*divScale;
+    let fontSize = minFont + (maxFont-minFont)*(divScale**2);
+    // I want the font to start out at the max size and then shrink with the height of the div. 
+    // I also want it to shrink with the size of the window so that it will not wrap on mobile
+
+    /*
+        So if div height is 100% we want the font width to be 8vw. Once the div starts shrinking,
+        we want it to stay 8vw until 90% of the div is smaller. 
+    */
+    
 
     let bgColor = "#000"
     let fontColor = "#fff"
@@ -66,6 +74,8 @@ export const NameCard = () => {
         "background-color": bgColor,
     }
 
+    console.log({divHeight});
+
     return (
         <div className={styles.container} style={style}>
             {colors.map((color, index) => {
@@ -73,7 +83,10 @@ export const NameCard = () => {
                 const style = {
                     color: color,
                     zIndex: colors.length -1*index,
-                    fontSize: `${fontSize}em`,
+                    // fontSize: `max(${divHeight*.9}px, 2.5vw)`,
+                    // fontSize: `clamp(5em, 8vw, ${divHeight*.9}px)`,
+                    fontSize: `clamp(2.5em, 10vw, ${divHeight*1.5}px)`,
+                    // fontSize: `clamp(${divHeight*.9}px, 8vw, ${divHeight*.9}px)`,
                 }
                 return (<Name key={index} order={index} style={style} scale={divScale}/>)
             })}
