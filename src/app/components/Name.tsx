@@ -20,8 +20,8 @@ export const Name: React.FC<NameProps> = ({ order, style, scale }) => {
         }, 
         animate: {
             opacity: 1,
-            y: `${-3.5*order*scale}px`, 
-            x: `${3.5*order*scale}px`,
+            y: `${-0.35*order*scale}vw`, 
+            x: `${0.35*order*scale}vw`,
             skewY: '5deg',
             transition: {
                 delay: 0.05*order,
