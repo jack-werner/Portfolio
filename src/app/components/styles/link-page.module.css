@@ -1,6 +1,6 @@
 .background {
     background-color: #000;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     
     display: flex;
@@ -16,20 +16,25 @@
     justify-content: space-around;
     align-content: space-around;
     flex-wrap: wrap;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 .link {
     background-color: white;
-    height: max(15vw, 2em);
-    flex-basis: 40% ;
-    min-width: 8em;
-    margin: 3vw;
+    height: min-content;
+
+    width: clamp( 40%, 8em, 90vw);
+
+
+    margin: 2vw;
+
+    padding: 4vw 0;
+
 
     color: #000;
     text-align: center;
     font-family: Superior Title;
-    font-size: 4rem;
+    font-size: clamp(4rem, 4vw, 6rem);
     font-style: italic;
     font-weight: 800;
     line-height: normal;
