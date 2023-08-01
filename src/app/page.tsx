@@ -8,7 +8,6 @@ import { AboutPage } from './components/AboutPage';
 import { LinkPage } from './components/LinkPage';
 
 export default function Home() {
-  console.log("SDAF");
 
   useEffect(() => {
     window.scrollTo(0, 0);

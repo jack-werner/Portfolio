@@ -37,7 +37,7 @@ export const TextCard: React.FC<TextCardProps> = ({title, children}) => {
 
     const variants = {
         hidden: {
-            x: '100%',
+            x: '50vw',
             opacity: 0.5,
             filter: 'blur(20px)',
             // display: 'None'

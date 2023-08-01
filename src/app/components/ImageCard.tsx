@@ -31,7 +31,7 @@ export const ImageCard = () => {
 
     const variants = {
         hidden: {
-            x: '-100%',
+            x: '-30%',
             opacity: 0.5,
             filter: 'blur(20px)',
         },

@@ -21,8 +21,6 @@ export const AboutPage = () => {
         }
     }, []);
 
-    console.log({height});
-
     const maxHeight = 120;
     const minHeight = 10;
 
@@ -34,7 +32,10 @@ export const AboutPage = () => {
 
     return(
         <div className={styles.background} style={style}>
-            <ImageCard></ImageCard>
+            <div className={styles.container}>
+                <ImageCard></ImageCard>
+            </div>
+            
             <TextCard title="About Me"> 
                 <p>
                 Hi! I'm Jack Werner, I'm a Software Engineer and DJ in Manhattan, NYC. 
