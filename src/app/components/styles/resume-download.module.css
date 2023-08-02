@@ -1,8 +1,9 @@
 .button {
     background-color: #000;
-    height: 2.5em;
+    height: 2em;
     width: 40%;
-    margin-top: 0.5em;
+    margin-bottom: 5%;
+
 
     flex-shrink: 0;
 
@@ -19,16 +20,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: sticky;
+    position: fixed;
+    bottom: 0%;
+
+    z-index: 100;
 }
+
+
 
 .button a {
     color: #fff;
     text-decoration: none;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .button a:hover {
-    cursor: grab;
+    cursor: pointer;
 }
 
 .underline {
