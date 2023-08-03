@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import { ImageCard } from "./ImageCard";
-import { ResumeDownload } from "./ResumeDownload";
 import styles from "./styles/about-page.module.css";
 import { TextCard } from "./TextCard";
 
@@ -32,27 +31,8 @@ export const AboutPage = () => {
 
     return(
         <div className={styles.background} style={style}>
-            <div className={styles.container}>
-                <ImageCard></ImageCard>
-            </div>
+            <ImageCard></ImageCard>
             <TextCard/>
-            {/* <div className={styles.scroll}>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-                <p>........</p>
-            </div> */}
         </div>
     )
 }

@@ -46,14 +46,18 @@ export const ImageCard = () => {
     }
 
     return (
-        <motion.img className={styles.image}
-            ref={imageRef}
-            src="https://i.imgur.com/nZwPqgx.jpg"  
-            alt="Jack Werner Portfolio Picture"
+        <motion.div className={styles.container}
             initial="hidden"
             animate={isVisible ? 'visible' : 'hidden'}
             variants={variants}
-        />
+            ref={imageRef}
+        >
+            <img className={styles.image} 
+                src="https://i.imgur.com/nZwPqgx.jpg"  
+                alt="Jack Werner Portfolio Picture"
+                ref={imageRef}
+            />
+        </motion.div>
     )
 
 }
