@@ -56,7 +56,7 @@
     color: #FFF;
     text-align: center;
     /* font-size: 3.125rem; */
-    font-size: clamp(5vw, 3.125rem, 5vw);
+    font-size: clamp(2.5rem, 3.125vw, 5vw);
     font-family: "le-monde-livre-std", serif;
     font-style: normal;
     font-weight: 700;
@@ -86,7 +86,7 @@
     justify-content: space-around;
 
     /* I think I need these two to work so dont delete */
-    padding-top: 12rem;
+    padding-top: 150px;
     padding-bottom: 20rem;
 
 
