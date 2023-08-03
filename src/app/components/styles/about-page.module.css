@@ -12,7 +12,7 @@
 
 .container {
     overflow: hidden;
-    height: clamp(15rem, 28vw, 1000px);
+    height: clamp(15rem, 26.7vw, 1000px);
 
     flex-shrink: 0;
     border-radius: 20px;
@@ -24,7 +24,7 @@
 
 .image {
     width: clamp(15rem, 20vw, 1000px);
-    height: clamp(20rem, 28vw, 1000px);
+    height: clamp(20rem, 26.7vw, 1000px);
     
     flex-shrink: 0;
     border-radius: 20px;
