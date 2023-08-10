@@ -2,8 +2,6 @@ import {motion} from 'framer-motion';
 
 import styles from './styles/resume-download.module.css'
 
-
-
 export const ResumeDownload = () => {
     const containerVariants = {
         normal: {
@@ -38,7 +36,7 @@ export const ResumeDownload = () => {
             whileHover="hover"
             transition={transition}
         >
-            <a href="/dinner-menu-july-2023.pdf" download="test.pdf">Resumé</a>
+            <a href="/JackWernerResume.pdf" download="JackWernerResume.pdf">Resumé</a>
             <motion.span
                 className={styles.underline}
                 variants={textVariants}
