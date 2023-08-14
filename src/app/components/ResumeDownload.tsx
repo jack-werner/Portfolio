@@ -36,7 +36,10 @@ export const ResumeDownload = () => {
             whileHover="hover"
             transition={transition}
         >
-            <a href="/JackWernerResume.pdf" download="JackWernerResume.pdf">Resumé</a>
+            <a 
+                href="https://jack-wolfgang-werner.s3.amazonaws.com/JackWernerResume.pdf" 
+                download="JackWernerResume.pdf"
+            >Resumé</a>
             <motion.span
                 className={styles.underline}
                 variants={textVariants}
