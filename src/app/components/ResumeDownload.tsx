@@ -30,7 +30,8 @@ export const ResumeDownload = () => {
 
   return (
     <motion.div
-      className={styles.button}
+      //   className={styles.button}
+      className="font-about font-bold bg-black rounded-full py-2 px-8"
       variants={containerVariants}
       initial="normal"
       whileHover="hover"
@@ -40,7 +41,7 @@ export const ResumeDownload = () => {
         href="https://jack-wolfgang-werner.s3.amazonaws.com/JackWernerResume.pdf"
         download="JackWernerResume.pdf"
       >
-        Resumé
+        <h2 className="text-white text-2xl">Resumé</h2>
       </a>
       <motion.span
         className={styles.underline}

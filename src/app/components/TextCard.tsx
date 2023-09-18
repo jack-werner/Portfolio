@@ -34,7 +34,6 @@ export const TextCard: React.FC = () => {
       x: "50vw",
       opacity: 0.5,
       filter: "blur(20px)",
-      // display: 'None'
     },
     visible: {
       x: 0,
