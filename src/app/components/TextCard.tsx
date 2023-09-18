@@ -49,13 +49,18 @@ export const TextCard: React.FC = () => {
   return (
     <>
       <motion.div
-        className={styles.card}
+        // className={styles.card}
+        className="flex flex-col items-center justify-center rounded-3xl w-6/12"
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
         variants={variants}
         ref={textRef}
       >
-        <div className={styles.header}>About Me</div>
+        <div className="flex flex-row justify-center p-4 bg-black w-full rounded-3xl rounded-b-none">
+          <h2 className="text-white font-about font-bold text-4xl tracking-widest">
+            About Me
+          </h2>
+        </div>
         <div className={styles.scroll}>
           <div className={styles.body}>
             <p>
@@ -81,7 +86,7 @@ export const TextCard: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center absolute bottom-0 w-full backdrop-blur-sm bg-gradient-to-b from-transparent to-gray-300 p-4">
+        <div className="flex items-center justify-center absolute bottom-0 w-full backdrop-blur-sm bg-gradient-to-b from-transparent to-gray-300 p-4 rounded-3xl rounded-t-none">
           <ResumeDownload />
         </div>
       </motion.div>

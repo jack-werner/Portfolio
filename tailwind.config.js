@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,tsx,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        about: ["le-monde-livre", "serif"],
+      },
+      fontWeight: {
+        custom: ["400", "700"],
+      },
+    },
   },
   plugins: [],
 };
