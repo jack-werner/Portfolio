@@ -49,20 +49,21 @@ export const TextCard: React.FC = () => {
   return (
     <>
       <motion.div
-        // className={styles.card}
-        className="flex flex-col items-center justify-center rounded-3xl w-6/12"
+        className="flex flex-col items-center justify-center rounded-3xl w-6/12 shadow-2xl max-h-[55%]"
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
         variants={variants}
         ref={textRef}
       >
         <div className="flex flex-row justify-center p-4 bg-black w-full rounded-3xl rounded-b-none">
-          <h2 className="text-white font-about font-bold text-4xl tracking-widest">
+          <h2 className="text-white font-about font-bold text-4xl tracking-wide">
             About Me
           </h2>
         </div>
-        <div className={styles.scroll}>
-          <div className={styles.body}>
+        {/* <div className={styles.scroll}> */}
+        <div className="flex flex-col items-center p-4 overflow-scroll scroll-auto">
+          {/* <div className={styles.body}> */}
+          <div className="w-10/12 font-body font-extralight text-xs leading-loose indent-8">
             <p>
               Hi! I'm Jack Werner, I'm a Software Engineer and DJ in Manhattan,
               NYC. I have experience in{" "}
@@ -86,7 +87,7 @@ export const TextCard: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center absolute bottom-0 w-full backdrop-blur-sm bg-gradient-to-b from-transparent to-gray-300 p-4 rounded-3xl rounded-t-none">
+        <div className="flex items-center justify-center bottom-0 w-full backdrop-blur-sm bg-gradient-to-b from-transparent to-gray-300 p-4 rounded-3xl rounded-t-none">
           <ResumeDownload />
         </div>
       </motion.div>

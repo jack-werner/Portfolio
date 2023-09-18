@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         about: ["le-monde-livre", "serif"],
+        body: ["itc-avant-garde-gothic-pro", "sans"],
       },
       fontWeight: {
         custom: ["400", "700"],
