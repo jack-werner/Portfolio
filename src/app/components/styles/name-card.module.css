@@ -1,15 +1,15 @@
 .container {
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    width: 100vw;
-    max-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 900;
-    position: fixed;
-    top: 0; 
-    transition: background-color 2s ease;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  transition: background-color 2s ease;
 }
