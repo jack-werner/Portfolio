@@ -31,8 +31,12 @@ export const AboutPage = () => {
   };
 
   return (
-    <div className={styles.background} style={style}>
-      <ImageCard></ImageCard>
+    // <div className={styles.background} style={style}>
+    <div
+      className="h-screen w-screen bg-white flex flex-row flex-wrap items-center justify-around gap-8 p-8"
+      style={style}
+    >
+      <ImageCard />
       <TextCard />
     </div>
   );
