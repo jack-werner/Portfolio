@@ -1,63 +1,63 @@
-import React, { useEffect, useRef, useState} from "react";
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import styles from "./styles/about-page.module.css";
 
 export const ImageCard = () => {
-    const imageRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
+  const imageRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
-            });
-        });
-
-        if (imageRef.current) {
-            observer.observe(imageRef.current);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
         }
+      });
+    });
 
-        return () => {
-            if (imageRef.current) {
-                observer.unobserve(imageRef.current);
-            }
-        }
-
-    }, []);
-
-    const variants = {
-        hidden: {
-            x: '-30%',
-            opacity: 0.5,
-            filter: 'blur(20px)',
-        },
-        visible: {
-            x: 0,
-            opacity: 1,
-            filter: 'blur(0)',
-            transition: {
-                duration: 1,
-            }
-        }
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
     }
 
-    return (
-        <motion.div className={styles.container}
-            initial="hidden"
-            animate={isVisible ? 'visible' : 'hidden'}
-            variants={variants}
-            ref={imageRef}
-        >
-            <img className={styles.image} 
-                src="https://i.imgur.com/nZwPqgx.jpg"  
-                alt="Jack Werner Portfolio Picture"
-                ref={imageRef}
-            />
-        </motion.div>
-    )
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
 
-}
+  const variants = {
+    hidden: {
+      x: "-30%",
+      opacity: 0.5,
+      filter: "blur(20px)",
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      filter: "blur(0)",
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      className={styles.container}
+      initial="hidden"
+      animate={isVisible ? "visible" : "hidden"}
+      variants={variants}
+      ref={imageRef}
+    >
+      <img
+        className={styles.image}
+        src="https://i.imgur.com/nZwPqgx.jpg"
+        alt="Jack Werner Portfolio Picture"
+        ref={imageRef}
+      />
+    </motion.div>
+  );
+};
