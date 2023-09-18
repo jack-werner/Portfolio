@@ -31,7 +31,6 @@ export const AboutPage = () => {
   };
 
   return (
-    // <div className={styles.background} style={style}>
     <div
       className="h-screen w-screen bg-white flex flex-row flex-wrap items-center justify-around gap-4 p-16"
       style={style}

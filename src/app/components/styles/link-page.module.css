@@ -1,6 +1,6 @@
 .background {
   background-color: #000;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
 
   display: flex;
@@ -23,7 +23,7 @@
   background-color: white;
   height: min-content;
 
-  width: clamp(40%, 8em, 90vw);
+  width: clamp(30%, 7em, 90vw);
 
   margin: 2vw;
 
