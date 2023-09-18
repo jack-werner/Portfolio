@@ -2,7 +2,7 @@
   background-color: #000;
   height: 2em;
   width: 40%;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
 
   flex-shrink: 0;
 
@@ -20,8 +20,8 @@
   align-items: center;
   justify-content: center;
 
-  position: sticky;
-  position: fixed;
+  /* position: sticky; */
+  /* position: fixed; */
   bottom: 0%;
 
   z-index: 100;

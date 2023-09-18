@@ -63,9 +63,9 @@ export const TextCard: React.FC = () => {
               NYC. I have experience in{" "}
               <strong>
                 Data Engineering, Data Science, Data Analysis, and Web
-                Development
+                Development.
               </strong>
-              . I specifically enjoy working with{" "}
+              I specifically enjoy working with{" "}
               <strong>Python, AWS, SQL, and Next.js</strong>. I build technology
               that enables the creation, discovery, and appreciation of music.
               Music is my greatest passion and using software to help people
@@ -81,8 +81,9 @@ export const TextCard: React.FC = () => {
             </p>
           </div>
         </div>
-        <ResumeDownload />
-        <div className={styles.blur}></div>
+        <div className="flex items-center justify-center absolute bottom-0 w-full backdrop-blur-sm bg-gradient-to-b from-transparent to-gray-300 p-4">
+          <ResumeDownload />
+        </div>
       </motion.div>
     </>
   );
