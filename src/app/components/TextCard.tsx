@@ -48,7 +48,7 @@ export const TextCard: React.FC = () => {
   return (
     <>
       <motion.div
-        className="flex flex-col items-center justify-center rounded-3xl w-6/12 min-w-[32rem] shadow-2xl max-h-[60%]"
+        className="flex flex-col items-center justify-center rounded-3xl min-w-[50%] w-80 max-w-[90vw] shadow-2xl max-h-[60%]"
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
         variants={variants}
