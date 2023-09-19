@@ -64,13 +64,13 @@ export const TextCard: React.FC = () => {
           {/* <div className={styles.body}> */}
           <div className="w-10/12 font-body font-extralight text-xs leading-loose indent-8">
             <p>
-              Hi! I'm Jack Werner, I'm a Software Engineer and DJ in Manhattan,
-              NYC. I have experience in{" "}
+              Hi! I'm Jack Werner, I'm a Software Engineer in Manhattan, NYC. I
+              have experience in{" "}
               <strong>
                 Data Engineering, Data Science, Data Analysis, and Web
-                Development.
+                Development
               </strong>
-              I specifically enjoy working with{" "}
+              . I specifically enjoy working with{" "}
               <strong>Python, AWS, SQL, and Next.js</strong>. I build technology
               that enables the creation, discovery, and appreciation of music.
               Music is my greatest passion and using software to help people
