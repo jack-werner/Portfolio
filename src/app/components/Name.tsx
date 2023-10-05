@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./styles/name.module.css";
-import { easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { NameStyle } from "./NameCard";
 
 interface NameProps {

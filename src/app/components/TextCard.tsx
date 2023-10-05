@@ -59,25 +59,18 @@ export const TextCard: React.FC = () => {
             About Me
           </h2>
         </div>
-        {/* <div className={styles.scroll}> */}
         <div className="flex flex-col items-center p-4 overflow-scroll scroll-auto">
-          {/* <div className={styles.body}> */}
           <div className="w-10/12 font-body font-extralight text-xs leading-loose indent-8">
             <p>
-              Hi! I'm Jack Werner, I'm a Software Engineer and DJ in Manhattan,
-              NYC. I have experience in{" "}
-              <strong>
-                Data Engineering, Data Science, Data Analysis, and Web
-                Development.
-              </strong>
-              I specifically enjoy working with{" "}
-              <strong>Python, AWS, SQL, and Next.js</strong>. I build technology
-              that enables the creation, discovery, and appreciation of music.
-              Music is my greatest passion and using software to help people
-              enjoy it as much as I do brings me great joy. You can follow the
-              links below to see some projects I have undertaken in this area
-              and click on the link below to see my Resume and view my past
-              professional experience.
+              Hi! I'm Jack Werner, I'm a Software Engineer in Manhattan, NYC. I
+              have professional experience in{" "}
+              <b>Data Engineering, Data Science, and Data Analysis</b> and have
+              taught myself <b>Web Development</b>. I specifically enjoy working
+              with <b>Python, AWS, SQL, Spark, and Next.js</b>. In my personal
+              life I build technology that enables the creation, discovery, and
+              appreciation of music. You can follow the links below to see some
+              projects I have undertaken in this area and click on the link
+              below to see my Resume and view my past professional experience.
             </p>
             <p>
               In my personal life I also enjoy DJing and producing music,

@@ -30,7 +30,6 @@ export const ResumeDownload = () => {
 
   return (
     <motion.div
-      //   className={styles.button}
       className="font-about font-bold bg-black rounded-full py-2 px-8"
       variants={containerVariants}
       initial="normal"
