@@ -66,14 +66,13 @@ export const TextCard: React.FC = () => {
             <p>
               Hi! I'm Jack Werner, I'm a Software Engineer in Manhattan, NYC. I
               have professional experience in{" "}
-              <b>Data Engineering, Data Science, and Data Analysis</b>
-              and have taught myself <b>Web Development</b>. I specifically
-              enjoy working with <b>Python, AWS, SQL, and Next.js</b>. In my
-              personal life I build technology that enables the creation,
-              discovery, and appreciation of music. You can follow the links
-              below to see some projects I have undertaken in this area and
-              click on the link below to see my Resume and view my past
-              professional experience.
+              <b>Data Engineering, Data Science, and Data Analysis</b> and have
+              taught myself <b>Web Development</b>. I specifically enjoy working
+              with <b>Python, AWS, SQL, Spark, and Next.js</b>. In my personal
+              life I build technology that enables the creation, discovery, and
+              appreciation of music. You can follow the links below to see some
+              projects I have undertaken in this area and click on the link
+              below to see my Resume and view my past professional experience.
             </p>
             <p>
               In my personal life I also enjoy DJing and producing music,
