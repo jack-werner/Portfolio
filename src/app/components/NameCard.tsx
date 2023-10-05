@@ -34,8 +34,6 @@ export const NameCard = () => {
     "#EB2737",
     "#3B5FCC",
     "#24CBEC",
-    // "#38A95A",
-    // "#AC0FC8",
   ];
 
   // dynamically adjust the height and font size of the nav bar

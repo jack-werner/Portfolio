@@ -59,9 +59,7 @@ export const TextCard: React.FC = () => {
             About Me
           </h2>
         </div>
-        {/* <div className={styles.scroll}> */}
         <div className="flex flex-col items-center p-4 overflow-scroll scroll-auto">
-          {/* <div className={styles.body}> */}
           <div className="w-10/12 font-body font-extralight text-xs leading-loose indent-8">
             <p>
               Hi! I'm Jack Werner, I'm a Software Engineer in Manhattan, NYC. I

@@ -1,5 +1,4 @@
 import { LinkCard } from "./LinkCard";
-import styles from "./styles/link-page.module.css";
 
 export const LinkPage = () => {
   return (
